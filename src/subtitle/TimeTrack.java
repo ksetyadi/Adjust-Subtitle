@@ -82,7 +82,10 @@ public class TimeTrack {
 			newMinutes = --minutes % 60;
 
 			if (newMinutes > minutes) {
-				newHours = --hours % 60;
+				// you probably don't need the (modulo 24) part because no movie
+				// last for a day. You might one to add the modulo part someday,
+				// if such any movie exists.
+				newHours = --hours % 24;
 			}
 		}
 
