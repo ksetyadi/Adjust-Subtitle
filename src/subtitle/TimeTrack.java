@@ -75,7 +75,7 @@ public class TimeTrack {
 
 			if (newMinutes < minutes) {
 				// you probably don't need the (modulo 24) part because no movie
-				// last for a day. You might one to add the modulo part someday,
+				// last for a day. You might want to add the modulo part someday,
 				// if such any movie exists.
 				newHours = ++hours % 24;
 			}
@@ -86,7 +86,7 @@ public class TimeTrack {
 
 			if (newMinutes > minutes) {
 				// you probably don't need the (modulo 24) part because no movie
-				// last for a day. You might one to add the modulo part someday,
+				// last for a day. You might want to add the modulo part someday,
 				// if such any movie exists.
 				newHours = --hours % 24;
 			}
